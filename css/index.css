@@ -1,14 +1,10 @@
 .rounded-box {
   border-radius: 5px;
 }
-.button {
-  color: white;
-  background-color: #22283A;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  width: 100px;
+.center-text-column {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-size: 18px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -249,13 +245,17 @@ footer {
 }
 .home .walk .walk-text .btn {
   border-radius: 5px;
-  color: white;
-  background-color: #22283A;
   padding-top: 8px;
   padding-bottom: 8px;
   width: 100px;
-  text-align: center;
   font-size: 18px;
+  color: white;
+  background-color: #22283A;
+  text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

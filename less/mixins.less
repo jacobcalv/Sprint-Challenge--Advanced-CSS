@@ -3,12 +3,22 @@
     border-radius:5px;
 }
 
-.button{
-    color: white;
-    background-color: @btn-bg-color;
+.center-text-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.button(@color, @bg, @t-align) {
     padding-top: 8px;
     padding-bottom: 8px;
     width: 100px;
-    text-align: center;
     font-size: 18px;
+    color: @color;
+    background-color: @bg;
+    text-align: @t-align;
+    &:hover {
+        background-color: white;
+        color: @btn-bg-color;
+    }
 }
