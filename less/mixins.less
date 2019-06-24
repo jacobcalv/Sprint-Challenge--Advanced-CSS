@@ -17,6 +17,12 @@
     color: @color;
     background-color: @bg;
     text-align: @t-align;
+    @media @phone {
+        width: 100%;
+        padding: 4% 6.5% 4% 6.5%;
+        margin-bottom: 15px;
+
+    }
     &:hover {
         background-color: white;
         color: @btn-bg-color;
